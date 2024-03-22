@@ -26,7 +26,7 @@ function questions(index, text, answers) {
 
 function isValid(text, answer) {
   if (text == "name") {
-    return validator.isAlpha(answer);
+    return true; // Some people use numbers in their names nowadays :D
   } else if (text == "phone") {
     return validator.isMobilePhone(answer, "id-ID");
   } else {
